@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sesión 2 - CSS</title>
+
+    <style>
+        /* Selector de etiqueta */
+        body{
+            font-family: Arial, Helvetica, sans-serif;
+            background-color: #101820;
+            color: white;
+            margin: 0;
+            padding: 20px;
+        }
+
+        h1{
+            color: #00ff9d;
+            text-align: center;
+        }
+
+        h2{
+            color: #00d4ff;
+        }
+
+        p{
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        /* Selector de clase */
+        .caja{
+            background-color: #1f2937;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px 0;
+        }
+
+        .destacado{
+            color: yellow;
+            font-weight: bold;
+        }
+
+        /* Selector ID */
+        #titulo-principal{
+            text-transform: uppercase;
+        }
+
+        /* Selector combinado */
+        h2.subtitulo{
+            text-decoration: underline;
+        }
+
+        /* Estilo de enlaces */
+        a{
+            color: cyan;
+            text-decoration: none;
+        }
+
+        a:hover{
+            color: yellow;
+        }
+
+        /* Imagen */
+        img{
+            width: 300px;
+            max-width: 100%;
+            border: 4px solid white;
+            border-radius: 10px;
+            display: block;
+            margin: auto;
+        }
+
+        /* Responsive */
+        @media(max-width:768px){
+            body{
+                background-color:#16213e;
+            }
+
+            h1{
+                font-size:2rem;
+            }
+
+            p{
+                font-size:1rem;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <h1 id="titulo-principal">Sesión 2 - CSS</h1>
+
+    <div class="caja">
+        <h2 class="subtitulo">¿Qué es CSS?</h2>
+
+        <p>
+            CSS significa <span class="destacado">Cascading Style Sheets</span>.
+            Permite darle color, tamaño, posición y diseño a una página web.
+        </p>
+    </div>
+
+    <div class="caja">
+        <h2 class="subtitulo">Selectores</h2>
+
+        <ul>
+            <li>Selector de etiqueta</li>
+            <li>Selector de clase</li>
+            <li>Selector de ID</li>
+            <li>Selectores combinados</li>
+        </ul>
+    </div>
+
+    <div class="caja">
+        <h2 class="subtitulo">Propiedades CSS</h2>
+
+        <p>Algunas propiedades importantes son:</p>
+
+        <ul>
+            <li>color</li>
+            <li>background-color</li>
+            <li>font-size</li>
+            <li>font-family</li>
+            <li>font-weight</li>
+        </ul>
+    </div>
+
+    <div class="caja">
+        <h2 class="subtitulo">Ejemplo de Imagen</h2>
+
+        <img src="https://picsum.photos/600/300" alt="Imagen de ejemplo">
+    </div>
+
+    <div class="caja">
+        <h2 class="subtitulo">Enlaces</h2>
+
+        <p>
+            Visita
+            <a href="https://www.w3schools.com" target="_blank">
+                W3Schools
+            </a>
+            para aprender más sobre CSS.
+        </p>
+    </div>
+
+    <div class="caja">
+        <h2 class="subtitulo">Cascada y Especificidad</h2>
+
+        <p>
+            CSS aplica los estilos teniendo en cuenta la
+            <span class="destacado">especificidad</span>,
+            la importancia y el orden en que aparecen las reglas.
+        </p>
+    </div>
+
+</body>
+</html>
