@@ -1,158 +1,314 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Sesión 2 - CSS</title>
 
-    <style>
-        /* Selector de etiqueta */
-        body{
-            font-family: Arial, Helvetica, sans-serif;
-            background-color: #101820;
-            color: white;
-            margin: 0;
-            padding: 20px;
-        }
+    <title>Mateo | Portafolio Retro</title>
 
-        h1{
-            color: #00ff9d;
-            text-align: center;
-        }
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
 
-        h2{
-            color: #00d4ff;
-        }
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
-        p{
-            font-size: 18px;
-            line-height: 1.5;
-        }
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
 
-        /* Selector de clase */
-        .caja{
-            background-color: #1f2937;
-            padding: 20px;
-            border-radius: 10px;
-            margin: 20px 0;
-        }
-
-        .destacado{
-            color: yellow;
-            font-weight: bold;
-        }
-
-        /* Selector ID */
-        #titulo-principal{
-            text-transform: uppercase;
-        }
-
-        /* Selector combinado */
-        h2.subtitulo{
-            text-decoration: underline;
-        }
-
-        /* Estilo de enlaces */
-        a{
-            color: cyan;
-            text-decoration: none;
-        }
-
-        a:hover{
-            color: yellow;
-        }
-
-        /* Imagen */
-        img{
-            width: 300px;
-            max-width: 100%;
-            border: 4px solid white;
-            border-radius: 10px;
-            display: block;
-            margin: auto;
-        }
-
-        /* Responsive */
-        @media(max-width:768px){
-            body{
-                background-color:#16213e;
-            }
-
-            h1{
-                font-size:2rem;
-            }
-
-            p{
-                font-size:1rem;
-            }
-        }
-    </style>
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
 </head>
+
 <body>
 
-    <h1 id="titulo-principal">Sesión 2 - CSS</h1>
+    <!-- Fondo -->
+    <div id="particles"></div>
+    <div class="grid"></div>
+    <div class="scanlines"></div>
 
-    <div class="caja">
-        <h2 class="subtitulo">¿Qué es CSS?</h2>
+    <!-- Loader -->
+    <div id="loader">
+        <h1>LOADING...</h1>
+    </div>
+
+    <!--==========================
+            HEADER
+    ===========================-->
+
+    <header>
+
+        <div class="logo">
+
+            <span>MATEO</span>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li><a href="#sobreMi">Sobre mí</a></li>
+
+                <li><a href="#habilidades">Habilidades</a></li>
+
+                <li><a href="#proyectos">Proyectos</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!--==========================
+            HERO
+    ===========================-->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h2>Hola, soy</h2>
+
+            <h1>Mateo</h1>
+
+            <h3 class="typing"></h3>
+
+            <p>
+
+                Diseñador Multimedia apasionado por el desarrollo web,
+                interfaces modernas y experiencias digitales con un
+                estilo retro futurista.
+
+            </p>
+
+            <div class="botones">
+
+                <a href="#proyectos" class="btn">
+                    Ver Proyectos
+                </a>
+
+                <a href="#contacto" class="btn btn2">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="circle">
+
+                <img src="img/perfil.png" alt="Perfil">
+
+            </div>
+
+        </div>
+
+    </section> 
+
+    <!--==========================
+        SOBRE MÍ
+===========================-->
+
+<section class="about hidden" id="sobreMi">
+
+    <div class="about-image">
+
+        <img src="img/perfil.png" alt="Mateo">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>Sobre mí</h2>
 
         <p>
-            CSS significa <span class="destacado">Cascading Style Sheets</span>.
-            Permite darle color, tamaño, posición y diseño a una página web.
+
+            Soy un diseñador multimedia y desarrollador web apasionado por
+            crear experiencias digitales modernas con un estilo retro,
+            combinando creatividad, animaciones y programación para
+            desarrollar interfaces atractivas.
+
         </p>
+
+        <a href="#" class="btn">
+            Descargar CV
+        </a>
+
     </div>
 
-    <div class="caja">
-        <h2 class="subtitulo">Selectores</h2>
+</section>
 
-        <ul>
-            <li>Selector de etiqueta</li>
-            <li>Selector de clase</li>
-            <li>Selector de ID</li>
-            <li>Selectores combinados</li>
-        </ul>
+<!--==========================
+        HABILIDADES
+===========================-->
+
+<section class="skills hidden" id="habilidades">
+
+    <h2 class="title">Habilidades</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="bar">
+                <span style="width:95%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="bar">
+                <span style="width:90%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="bar">
+                <span style="width:80%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Illustrator</h3>
+            <div class="bar">
+                <span style="width:85%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Photoshop</h3>
+            <div class="bar">
+                <span style="width:88%;"></span>
+            </div>
+        </div>
+
     </div>
 
-    <div class="caja">
-        <h2 class="subtitulo">Propiedades CSS</h2>
+</section>
 
-        <p>Algunas propiedades importantes son:</p>
+<!--==========================
+        PROYECTOS
+===========================-->
 
-        <ul>
-            <li>color</li>
-            <li>background-color</li>
-            <li>font-size</li>
-            <li>font-family</li>
-            <li>font-weight</li>
-        </ul>
+<section class="projects hidden" id="proyectos">
+
+    <h2 class="title">Mis Proyectos</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto1.jpg" alt="Proyecto">
+
+            <h3>Proyecto Uno</h3>
+
+            <p>Diseño web moderno con estilo retro.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto2.jpg" alt="Proyecto">
+
+            <h3>Proyecto Dos</h3>
+
+            <p>Aplicación desarrollada con JavaScript.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto3.jpg" alt="Proyecto">
+
+            <h3>Proyecto Tres</h3>
+
+            <p>Diseño UI con efectos Cyberpunk.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
     </div>
 
-    <div class="caja">
-        <h2 class="subtitulo">Ejemplo de Imagen</h2>
+</section>
 
-        <img src="https://picsum.photos/600/300" alt="Imagen de ejemplo">
+<!--==========================
+        CONTACTO
+===========================-->
+
+<section class="contact hidden" id="contacto">
+
+    <h2 class="title">Contacto</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nombre">
+
+        <input type="email" placeholder="Correo">
+
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+
+        <button class="btn">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+<!--==========================
+        FOOTER
+===========================-->
+
+<footer>
+
+    <h2>Mateo</h2>
+
+    <p>
+        © 2026 - Portafolio Retro | Todos los derechos reservados.
+    </p>
+
+    <div class="social">
+
+        <a href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
     </div>
 
-    <div class="caja">
-        <h2 class="subtitulo">Enlaces</h2>
+</footer>
 
-        <p>
-            Visita
-            <a href="https://www.w3schools.com" target="_blank">
-                W3Schools
-            </a>
-            para aprender más sobre CSS.
-        </p>
-    </div>
-
-    <div class="caja">
-        <h2 class="subtitulo">Cascada y Especificidad</h2>
-
-        <p>
-            CSS aplica los estilos teniendo en cuenta la
-            <span class="destacado">especificidad</span>,
-            la importancia y el orden en que aparecen las reglas.
-        </p>
-    </div>
+<script src="script.js"></script>
 
 </body>
 </html>
