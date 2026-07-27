@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Mateo | Portafolio Retro</title>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=Orbitron:wght@400;600;700;800&family=Press+Start+2P&display=swap" rel="stylesheet">
+
+    <!-- Iconos -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
+</head>
+
+<body>
+
+    <!-- Fondo -->
+    <div id="particles"></div>
+    <div class="grid"></div>
+    <div class="scanlines"></div>
+
+    <!-- Loader -->
+    <div id="loader">
+        <h1>LOADING...</h1>
+    </div>
+
+    <!--==========================
+            HEADER
+    ===========================-->
+
+    <header>
+
+        <div class="logo">
+
+            <span>MATEO</span>
+
+        </div>
+
+        <nav>
+
+            <ul>
+
+                <li><a href="#inicio">Inicio</a></li>
+
+                <li><a href="#sobreMi">Sobre mí</a></li>
+
+                <li><a href="#habilidades">Habilidades</a></li>
+
+                <li><a href="#proyectos">Proyectos</a></li>
+
+                <li><a href="#contacto">Contacto</a></li>
+
+            </ul>
+
+        </nav>
+
+        <div class="menu">
+
+            <i class="fa-solid fa-bars"></i>
+
+        </div>
+
+    </header>
+
+    <!--==========================
+            HERO
+    ===========================-->
+
+    <section class="hero" id="inicio">
+
+        <div class="hero-text">
+
+            <h2>Hola, soy</h2>
+
+            <h1>Mateo</h1>
+
+            <h3 class="typing"></h3>
+
+            <p>
+
+                Diseñador Multimedia apasionado por el desarrollo web,
+                interfaces modernas y experiencias digitales con un
+                estilo retro futurista.
+
+            </p>
+
+            <div class="botones">
+
+                <a href="#proyectos" class="btn">
+                    Ver Proyectos
+                </a>
+
+                <a href="#contacto" class="btn btn2">
+                    Contacto
+                </a>
+
+            </div>
+
+        </div>
+
+        <div class="hero-image">
+
+            <div class="circle">
+
+                <img src="img/perfil.png" alt="Perfil">
+
+            </div>
+
+        </div>
+
+    </section> 
+
+    <!--==========================
+        SOBRE MÍ
+===========================-->
+
+<section class="about hidden" id="sobreMi">
+
+    <div class="about-image">
+
+        <img src="img/perfil.png" alt="Mateo">
+
+    </div>
+
+    <div class="about-content">
+
+        <h2>Sobre mí</h2>
+
+        <p>
+
+            Soy un diseñador multimedia y desarrollador web apasionado por
+            crear experiencias digitales modernas con un estilo retro,
+            combinando creatividad, animaciones y programación para
+            desarrollar interfaces atractivas.
+
+        </p>
+
+        <a href="#" class="btn">
+            Descargar CV
+        </a>
+
+    </div>
+
+</section>
+
+<!--==========================
+        HABILIDADES
+===========================-->
+
+<section class="skills hidden" id="habilidades">
+
+    <h2 class="title">Habilidades</h2>
+
+    <div class="skills-container">
+
+        <div class="skill">
+            <h3>HTML</h3>
+            <div class="bar">
+                <span style="width:95%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>CSS</h3>
+            <div class="bar">
+                <span style="width:90%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>JavaScript</h3>
+            <div class="bar">
+                <span style="width:80%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Illustrator</h3>
+            <div class="bar">
+                <span style="width:85%;"></span>
+            </div>
+        </div>
+
+        <div class="skill">
+            <h3>Photoshop</h3>
+            <div class="bar">
+                <span style="width:88%;"></span>
+            </div>
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        PROYECTOS
+===========================-->
+
+<section class="projects hidden" id="proyectos">
+
+    <h2 class="title">Mis Proyectos</h2>
+
+    <div class="projects-container">
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto1.jpg" alt="Proyecto">
+
+            <h3>Proyecto Uno</h3>
+
+            <p>Diseño web moderno con estilo retro.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto2.jpg" alt="Proyecto">
+
+            <h3>Proyecto Dos</h3>
+
+            <p>Aplicación desarrollada con JavaScript.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
+        <div class="card">
+
+            <img src="img/proyectos/proyecto3.jpg" alt="Proyecto">
+
+            <h3>Proyecto Tres</h3>
+
+            <p>Diseño UI con efectos Cyberpunk.</p>
+
+            <a href="#" class="btn">Ver Más</a>
+
+        </div>
+
+    </div>
+
+</section>
+
+<!--==========================
+        CONTACTO
+===========================-->
+
+<section class="contact hidden" id="contacto">
+
+    <h2 class="title">Contacto</h2>
+
+    <form>
+
+        <input type="text" placeholder="Nombre">
+
+        <input type="email" placeholder="Correo">
+
+        <textarea placeholder="Escribe tu mensaje"></textarea>
+
+        <button class="btn">
+            Enviar
+        </button>
+
+    </form>
+
+</section>
+
+<!--==========================
+        FOOTER
+===========================-->
+
+<footer>
+
+    <h2>Mateo</h2>
+
+    <p>
+        © 2026 - Portafolio Retro | Todos los derechos reservados.
+    </p>
+
+    <div class="social">
+
+        <a href="#">
+            <i class="fab fa-facebook-f"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-github"></i>
+        </a>
+
+        <a href="#">
+            <i class="fab fa-linkedin-in"></i>
+        </a>
+
+    </div>
+
+</footer>
+
+<script src="script.js"></script>
+
+</body>
+</html>
